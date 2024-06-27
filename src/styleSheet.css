@@ -1,0 +1,304 @@
+/*
+@Author: Hassan Ali 
+        Assignment 1 - TCSS 460 
+*/
+
+body {
+    background-image: url("start/images/stucco/stucco.png");
+    padding: 0;
+    margin: 0;
+}
+
+p.banner {
+    width: 980px;
+    font-size: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 0;
+    margin: auto;
+}
+
+div.profileMenuBlock {
+    width: 980px;
+    background-color: #222222;
+    margin: auto;
+}
+
+div.pageMenuBlock {
+    width: 980px;
+    background-color: #f8f8f8;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+div.mainPage,
+div.mainAccountPage {
+    background-color: white;
+    width: 980px;
+    padding-top: 10px;
+    background-size: cover;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin: auto; 
+}
+
+div.mainPage {
+    height: 780px;
+}
+
+div.mainAccountPage {
+    height: 900px;
+}
+
+ul.profileMenu {
+    padding-left: 50%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li.profileMenuRef {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+li.profileMenuRef a {
+    text-decoration: none;
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li.profileMenuRef a:hover {
+    background-color: lightblue;
+}
+
+ul.pageMenu {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li.pageMenuRef {
+    display: inline-block;
+    margin-left: 0;
+    padding-right: 50px;
+}
+
+li.pageMenuRef a {
+    text-decoration: none;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li.pageMenuRef a:hover {
+    background-color: lightgrey;
+}
+
+p.mainPhotoTitle {
+    color: #222222;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+p.authorMainPhoto {
+    color: #222222;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-left: 10px;
+}
+
+img.portrait {
+    float: left;
+    padding: 10px;
+    height: 400px;
+}
+
+p.description {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: 960px;
+}
+
+p.price {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+ul.purchaseList {
+    float: left;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    width: 600px;
+    border-color: #f1f1f1;
+}
+
+li.wishBuyRef {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 10px;
+    padding-left: 0;
+    padding-top: 10px;
+    width: 260px;
+    height: 0px;
+    text-align-last: center;
+    padding-bottom: 25px;
+    background-color: #efefef;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1px;
+}
+
+li.wishBuyRef a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.productDetailsTitle {
+    font-size: 24px;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #222222;
+    padding-bottom: 5px;
+    margin-left: 310px;
+    border-style: solid;
+    border-width: 1px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #f1f1f1;
+    width: 580px;
+    background-size: 1px;
+    padding-left: 0;
+}
+
+table.productDetails {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+
+td.col1Details {
+    font-weight: bold;
+}
+
+p.reccomendationsTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #f1f1f1;
+}
+
+div.listOfReccomendationsContainer {
+    text-align: center;
+}
+
+ul.listOfReccomendations {
+    padding-right: 140px;
+}
+
+li.similarPhoto {
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 185px;
+    height: 185px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f1f1f1;
+}
+
+a.similarPhotoRef {
+    margin-left: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+button.buttonSimilarPhoto {
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+
+div.basePage {
+    width: 980px;
+    background-color: #222222;
+    margin: auto;
+    height: 40px;
+}
+
+p.basePageInfo {
+    color: #a4a4a4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+ol.listSteps {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+li.listStepTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.formElementGroupX {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+div.stepDivider {
+    border-style: solid;
+    border-width: 1px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color: #f1f1f1;
+    width: 430px;
+}
+
+input.longInputForm {
+    width: 410px;
+}
+
+input.smallForm1 {
+    width: 60px;
+}
+
+input.smallForm2 {
+    width: 70px;
+}
+
+input.artLoverRange {
+    width: 300px;
+}
+
+input.longInputForm2 {
+    width: 170px;
+}

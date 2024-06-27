@@ -1,0 +1,221 @@
+<!-- @Author: Hassan Ali 
+        Assignment 1 - TCSS 460 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Page 2</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body>
+    <form action="http://faculty.washington.edu/ealmasri/assign1.php" method="POST">
+        <div class="profileMenuBlock">
+            <ul class="profileMenu">
+                <li class="profileMenuRef"><a href="pageTwo.html">My Account</a></li>
+                <li class="profileMenuRef"><a href="#">Wish List</a></li>
+                <li class="profileMenuRef"><a href="#">Shopping Cart</a></li>
+                <li class="profileMenuRef"><a href="#">Checkout</a></li>
+            </ul>
+        </div>
+        <p class="banner">Art Store</p>
+        <div class="pageMenuBlock">
+            <ul class="pageMenu">
+                <li class="pageMenuRef"><a href="pageOne.html#">Home</a></li>
+                <li class="pageMenuRef"><a href="#">About Us</a></li>
+                <li class="pageMenuRef"><a href="#">Art Works</a></li>
+                <li class="pageMenuRef"><a href="#">Artists</a></li>
+            </ul>
+        </div>
+        <div class="mainAccountPage">
+            <p class="mainPhotoTitle">Customer Registration</p>
+            <ol class="listSteps">
+                <li class="listStepTitle">User Info</li>
+                <br>
+                <div class="stepDivider"></div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="formElementGroupX">
+                                <label for="first">First Name</label>
+                                <br>
+                                <input id="first" type="text" required name="first" value="Eyhab">
+                            </div>
+                        </td>
+                        <td>
+                            <label for="last">Last Name</label>
+                            <br>
+                            <input id="last" type="text" class="longInputForm2" required name="last" value="Al-Masri">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="email">Email</label>
+                            <br>
+                            <input id="email" type="text" 
+                                title="Email must be valid containing a '@', and a domain with the included '.' symbol."
+                                class="longInputForm" required name="email" value="ealmasri@uw.edu" 
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="formElementGroupX">
+                                <label for="myPass">Password</label>
+                                <br>
+                                <input id="myPass" required name="myPass" type="password" 
+                                    title="Password must be at least 8 characters long." 
+                                    value="ThisPaSSwordisStrong!$@" minlength="8" pattern="[a-zA-Z0._+-]{8,}">
+                            </div>
+                        </td>
+                        <td>
+                            <label for="passRepeat">Password Repeat</label>
+                            <br>
+                            <input id="passRepeat" type="password" 
+                                title="Password must be at least 8 characters long." 
+                                required name="passRepeat" value="ThisPaSSwordisStrong!$@" minlength="8" pattern="[a-zA-Z0._+-]{8,}">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <li class="listStepTitle">Location</li>
+                <br>
+                <div class="stepDivider"></div>
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <label for="address">Address</label>
+                            <br>
+                            <input id="address" type="text" class="longInputForm" required name="address" value="1900 Commerce Street">
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <div class="threeFormElementGroupX">
+                                <label for="city">City</label>
+                                <br>
+                                <input id="city" type="text" 
+                                    title="Must contain at least one letter and no digits or special characters" 
+                                    required name="city" value="Tacoma" pattern="[a-zA-Z\s]{1,}">
+                            </div>
+                        </td>
+                        <td>
+                            <label for="state">State</label>
+                            <br>
+                            <input id="state" type="text" 
+                                title="Must be two upper case letters like 'WA' to indicate a state"
+                                class="smallForm1" required name="state" value="WA" pattern="[A-Z]{2,2}">
+                        </td>
+                        <td>
+                            <label for="zip">Zip</label>
+                            <br>
+                            <input id="zip" type="text"
+                                title="Must be between 5 and 9 digits to comply with standard zip and zip+4" 
+                                class="smallForm2" required name="zip" value="98042" pattern="[0-9]{5,9}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="formElementGroupX">
+                                <label for="phone">Phone</label>
+                                <br>
+                                <input id="phone" type="tel" 
+                                    title="Must conform to '123-456-7890' format" 
+                                    required name="phone" value="253-692-4000" 
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
+                        </td>
+                        <td>
+                            <label for="country">Country</label>
+                            <br>
+                            <select id="country" required name="country">
+                                <option value="United States" selected>United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="africa" type="radio" name="continent" value="Africa">
+                            <label for="africa">Africa</label>
+                            <br>
+                            <input id="antarctica" type="radio" name="continent" value="Antarctica">
+                            <label for="antarctica">Antarctica</label>
+                            <br>
+                            <input id="asia" type="radio" name="continent" value="Asia">
+                            <label for="asia">Asia</label>
+                            <br>
+                            <input id="australia" type="radio" name="continent" value="Australia">
+                            <label for="australia">Australia</label>
+                            <br>
+                            <input id="europe" type="radio" name="continent" value="Europe">
+                            <label for="europe">Europe</label>
+                            <br>
+                            <input id="northAmerica" type="radio" name="continent" value="North America" checked>
+                            <label for="northAmerica">North America</label>
+                            <br>
+                            <input id="southAmerica" type="radio" name="continent" value="South America">
+                            <label for="southAmerica">South America</label>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <li class="listStepTitle">Personal Details</li>
+                <br>
+                <div class="stepDivider"></div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="formElementGroupX">
+                                <label for="birthday">Birth Day</label>
+                                <input id="birthday" type="date" required name="birthday" value="2020-06-23">
+                            </div>
+                        </td>
+                        <td>
+                            <label for="favorite">Favorite Color</label>
+                            <br>
+                            <input id="favorite" type="color" required value="#0000ff" name="favorite">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="interest">Interest In Art</label>
+                            <br>
+                            <label for="interest">Minimal</label>
+                            <input id="interest" type="range" class="artLoverRange" required value="80" name="interest">
+                            <label for="interest">Love it!</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <li class="listStepTitle">All Done</li>
+                <div class="stepDivider"></div>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="accept" type="checkbox" required name="accept" checked>
+                            <label for="accept">I agree to the <a href="#">Terms of the site</a></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">
+                                <img src="start/images/button_ok.png" alt="OK Button">
+                                Sign me up!
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </ol>
+        </div>
+        <div class="basePage">
+            <p class="basePageInfo">All images are copyright to their owners. This is just a hypothetical site &copy; 2014 Copyright Art Store</p>
+        </div>
+    </form>
+</body>
+</html>
