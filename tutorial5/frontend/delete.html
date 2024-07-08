@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css">
+  <title>Delete City</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">City Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+        <li class="nav-item"><a class="nav-link" href="read.html">Read</a></li>
+        <li class="nav-item"><a class="nav-link" href="update.html">Update</a></li>
+        <li class="nav-item"><a class="nav-link" href="delete.html">Delete</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <h1>Delete City</h1>
+    <form id="deleteCityForm">
+      <div class="form-group">
+        <label for="city">City Name</label>
+        <select class="form-control" id="city">
+          <!-- Options will be populated here -->
+        </select>
+      </div>
+      <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    <div id="deleteMessage" class="mt-4"></div>
+  </div>
+  <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+    <div class="container">
+      <span>&copy; 2024 City Management</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../backend/delete.js"></script>
+</body>
+</html>
